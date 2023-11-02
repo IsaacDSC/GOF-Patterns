@@ -17,7 +17,7 @@ func main() {
 		Sku      string
 		Quantity int
 	}{{Sku: "123", Quantity: 2}, {Sku: "456", Quantity: 2}}
-	response := commerce.Implements("enterpriseId_123", "checkout")a
+	response := commerce.Implements("enterpriseId_123", "checkout")
 	if response != "SUCCESS" {
 		log.Fatalf(errors.New("NOT-SUCCESS").Error())
 	}
